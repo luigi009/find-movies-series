@@ -4,8 +4,6 @@ import { HashRouter as Router, Route, Redirect, BrowserRouter, Switch } from 're
 
 import './App.css';
 
-import Navbar from './components/layout/Navigation';
-
 import Landing from './components/home/Landing';
 import Movie from './components/home/Movie';
 
@@ -19,7 +17,6 @@ class App extends Component {
           <Switch>
             <Router>
               <>
-                <Navbar />
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/movie/:id" component={Movie} />
                 <Redirect to="/" />
