@@ -21,7 +21,7 @@ export class Movie extends Component {
             <img src={movie.Poster} className="thumbnail" alt="Poster" />
           </div>
           <div className="col-md-8">
-            <h2 className="mb-4 card-title" style={{color: '#fff'}}>{movie.Title}</h2>
+            <h2 className="mb-4 card-title" style={{color: '#fff', height: '40px'}}>{movie.Title}</h2>
             <ul className="list-group">
               <li className="list-group-item">
                 <strong>Genre:</strong> {movie.Genre}
