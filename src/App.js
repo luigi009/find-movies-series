@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { HashRouter as Router, Route, Redirect, BrowserRouter, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, BrowserRouter, Switch } from 'react-router-dom';
 
 import './App.css';
 
@@ -19,7 +19,6 @@ class App extends Component {
               <>
                 <Route exact path="/" component={Landing} />
                 <Route exact path="/movie/:id" component={Movie} />
-                <Redirect to="/" />
               </>
             </Router>
           </Switch>
